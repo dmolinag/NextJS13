@@ -1,11 +1,37 @@
 self.__RSC_MANIFEST={
   "__ssr_module_mapping__": {
+    "(app-client)/./app/components/Header.tsx": {
+      "": {
+        "id": "(sc_client)/./app/components/Header.tsx",
+        "name": "",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./app/components/Header.tsx",
+        "name": "*",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/Header.tsx",
+        "name": "default",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/client/link.js": {
       "": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+          "app/reserve/[slug]/page:app/reserve/[slug]/page"
         ],
         "async": false
       },
@@ -13,7 +39,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+          "app/reserve/[slug]/page:app/reserve/[slug]/page"
         ],
         "async": false
       },
@@ -21,7 +47,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+          "app/reserve/[slug]/page:app/reserve/[slug]/page"
         ],
         "async": false
       }
@@ -133,16 +159,42 @@ self.__RSC_MANIFEST={
   },
   "__edge_ssr_module_mapping__": {},
   "__entry_css_files__": {
-    "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\initial-nextjs-app\\app\\layout": [
+    "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\app\\layout": [
       "static/css/_app-client_app_globals_css.css"
     ]
   },
-  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\initial-nextjs-app\\node_modules\\next\\dist\\client\\link.js": {
+  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\app\\components\\Header.tsx": {
+    "": {
+      "id": "(app-client)/./app/components/Header.tsx",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./app/components/Header.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./app/components/Header.tsx",
+      "name": "default",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    }
+  },
+  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\node_modules\\next\\dist\\client\\link.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+        "app/reserve/[slug]/page:app/reserve/[slug]/page"
       ],
       "async": false
     },
@@ -150,7 +202,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+        "app/reserve/[slug]/page:app/reserve/[slug]/page"
       ],
       "async": false
     },
@@ -158,12 +210,12 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
+        "app/reserve/[slug]/page:app/reserve/[slug]/page"
       ],
       "async": false
     }
   },
-  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\initial-nextjs-app\\node_modules\\next\\dist\\client\\components\\app-router.js": {
+  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\node_modules\\next\\dist\\client\\components\\app-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "",
@@ -189,7 +241,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\initial-nextjs-app\\node_modules\\next\\dist\\client\\components\\error-boundary.js": {
+  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\node_modules\\next\\dist\\client\\components\\error-boundary.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
@@ -215,7 +267,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\initial-nextjs-app\\node_modules\\next\\dist\\client\\components\\layout-router.js": {
+  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\node_modules\\next\\dist\\client\\components\\layout-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "",
@@ -241,7 +293,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\initial-nextjs-app\\node_modules\\next\\dist\\client\\components\\render-from-template-context.js": {
+  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\node_modules\\next\\dist\\client\\components\\render-from-template-context.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
@@ -267,7 +319,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\initial-nextjs-app\\app\\globals.css": {
+  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\app\\globals.css": {
     "default": {
       "id": "null",
       "name": "default",
