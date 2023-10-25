@@ -1,27 +1,27 @@
 {
   "__ssr_module_mapping__": {
-    "(app-client)/./app/components/Header.tsx": {
+    "(app-client)/./app/components/SearchBar.tsx": {
       "": {
-        "id": "(sc_client)/./app/components/Header.tsx",
+        "id": "(sc_client)/./app/components/SearchBar.tsx",
         "name": "",
         "chunks": [
-          "app/page:app/page"
+          "app/search/page:app/search/page"
         ],
         "async": false
       },
       "*": {
-        "id": "(sc_client)/./app/components/Header.tsx",
+        "id": "(sc_client)/./app/components/SearchBar.tsx",
         "name": "*",
         "chunks": [
-          "app/page:app/page"
+          "app/search/page:app/search/page"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./app/components/Header.tsx",
+        "id": "(sc_client)/./app/components/SearchBar.tsx",
         "name": "default",
         "chunks": [
-          "app/page:app/page"
+          "app/search/page:app/search/page"
         ],
         "async": false
       }
@@ -163,28 +163,28 @@
       "static/css/_app-client_app_globals_css.css"
     ]
   },
-  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\app\\components\\Header.tsx": {
+  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\app\\components\\SearchBar.tsx": {
     "": {
-      "id": "(app-client)/./app/components/Header.tsx",
+      "id": "(app-client)/./app/components/SearchBar.tsx",
       "name": "",
       "chunks": [
-        "app/page:app/page"
+        "app/search/page:app/search/page"
       ],
       "async": false
     },
     "*": {
-      "id": "(app-client)/./app/components/Header.tsx",
+      "id": "(app-client)/./app/components/SearchBar.tsx",
       "name": "*",
       "chunks": [
-        "app/page:app/page"
+        "app/search/page:app/search/page"
       ],
       "async": false
     },
     "default": {
-      "id": "(app-client)/./app/components/Header.tsx",
+      "id": "(app-client)/./app/components/SearchBar.tsx",
       "name": "default",
       "chunks": [
-        "app/page:app/page"
+        "app/search/page:app/search/page"
       ],
       "async": false
     }

@@ -1,3 +1,5 @@
+'use client';
+
 export default function ReservationCard() {
 	return (
 		<div className='w-[27%] relative text-reg'>
