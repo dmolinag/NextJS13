@@ -1,5 +1,6 @@
 {
-  "/reserve/[slug]/page": "app/reserve/[slug]/page.js",
-  "/page": "app/page.js",
-  "/search/page": "app/search/page.js"
+  "/restaurant/[slug]/page": "app/restaurant/[slug]/page.js",
+  "/search/page": "app/search/page.js",
+  "/restaurant/[slug]/menu/page": "app/restaurant/[slug]/menu/page.js",
+  "/page": "app/page.js"
 }
