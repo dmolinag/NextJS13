@@ -20,40 +20,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/restaurant/[slug]/page.js"
     ],
-    "/restaurant/[slug]/menu/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/restaurant/[slug]/menu/page.js"
-    ],
-    "/search/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/search/page.js"
-    ],
-    "/reserve/[slug]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/reserve/[slug]/page.js"
-    ],
     "/restaurant/[slug]/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/restaurant/[slug]/layout.js"
     ],
-    "/search/head": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/search/head.js"
-    ],
-    "/restaurant/head": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/restaurant/head.js"
-    ],
     "/restaurant/[slug]/head": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/restaurant/[slug]/head.js"
+    ],
+    "/restaurant/[slug]/menu/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/restaurant/[slug]/menu/page.js"
     ],
     "/restaurant/[slug]/menu/head": [
       "static/chunks/webpack.js",

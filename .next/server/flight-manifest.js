@@ -5,7 +5,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./app/components/SearchBar.tsx",
         "name": "",
         "chunks": [
-          "app/search/page:app/search/page"
+          "app/page:app/page"
         ],
         "async": false
       },
@@ -13,7 +13,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./app/components/SearchBar.tsx",
         "name": "*",
         "chunks": [
-          "app/search/page:app/search/page"
+          "app/page:app/page"
         ],
         "async": false
       },
@@ -21,7 +21,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./app/components/SearchBar.tsx",
         "name": "default",
         "chunks": [
-          "app/search/page:app/search/page"
+          "app/page:app/page"
         ],
         "async": false
       }
@@ -31,7 +31,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/reserve/[slug]/page:app/reserve/[slug]/page"
+          "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
         ],
         "async": false
       },
@@ -39,7 +39,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/reserve/[slug]/page:app/reserve/[slug]/page"
+          "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
         ],
         "async": false
       },
@@ -47,7 +47,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/reserve/[slug]/page:app/reserve/[slug]/page"
+          "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
         ],
         "async": false
       }
@@ -194,7 +194,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./app/components/SearchBar.tsx",
       "name": "",
       "chunks": [
-        "app/search/page:app/search/page"
+        "app/page:app/page"
       ],
       "async": false
     },
@@ -202,7 +202,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./app/components/SearchBar.tsx",
       "name": "*",
       "chunks": [
-        "app/search/page:app/search/page"
+        "app/page:app/page"
       ],
       "async": false
     },
@@ -210,7 +210,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./app/components/SearchBar.tsx",
       "name": "default",
       "chunks": [
-        "app/search/page:app/search/page"
+        "app/page:app/page"
       ],
       "async": false
     }
@@ -220,7 +220,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/reserve/[slug]/page:app/reserve/[slug]/page"
+        "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
       ],
       "async": false
     },
@@ -228,7 +228,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/reserve/[slug]/page:app/reserve/[slug]/page"
+        "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
       ],
       "async": false
     },
@@ -236,7 +236,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/reserve/[slug]/page:app/reserve/[slug]/page"
+        "app/restaurant/[slug]/menu/page:app/restaurant/[slug]/menu/page"
       ],
       "async": false
     }
