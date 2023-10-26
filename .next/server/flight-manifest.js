@@ -1,11 +1,89 @@
 self.__RSC_MANIFEST={
   "__ssr_module_mapping__": {
+    "(app-client)/./public/icons/empty-star.png": {
+      "": {
+        "id": "(sc_client)/./public/icons/empty-star.png",
+        "name": "",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./public/icons/empty-star.png",
+        "name": "*",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./public/icons/empty-star.png",
+        "name": "default",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./public/icons/full-star.png": {
+      "": {
+        "id": "(sc_client)/./public/icons/full-star.png",
+        "name": "",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./public/icons/full-star.png",
+        "name": "*",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./public/icons/full-star.png",
+        "name": "default",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./public/icons/half-star.png": {
+      "": {
+        "id": "(sc_client)/./public/icons/half-star.png",
+        "name": "",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./public/icons/half-star.png",
+        "name": "*",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./public/icons/half-star.png",
+        "name": "default",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./app/components/SearchBar.tsx": {
       "": {
         "id": "(sc_client)/./app/components/SearchBar.tsx",
         "name": "",
         "chunks": [
-          "app/page:app/page"
+          "app/search/page:app/search/page"
         ],
         "async": false
       },
@@ -13,7 +91,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./app/components/SearchBar.tsx",
         "name": "*",
         "chunks": [
-          "app/page:app/page"
+          "app/search/page:app/search/page"
         ],
         "async": false
       },
@@ -21,7 +99,33 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./app/components/SearchBar.tsx",
         "name": "default",
         "chunks": [
-          "app/page:app/page"
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/image.js": {
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "*",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "default",
+        "chunks": [
+          "app/search/page:app/search/page"
         ],
         "async": false
       }
@@ -189,12 +293,90 @@ self.__RSC_MANIFEST={
       "static/css/_app-client_app_globals_css.css"
     ]
   },
+  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\public\\icons\\empty-star.png": {
+    "": {
+      "id": "(app-client)/./public/icons/empty-star.png",
+      "name": "",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./public/icons/empty-star.png",
+      "name": "*",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./public/icons/empty-star.png",
+      "name": "default",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    }
+  },
+  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\public\\icons\\full-star.png": {
+    "": {
+      "id": "(app-client)/./public/icons/full-star.png",
+      "name": "",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./public/icons/full-star.png",
+      "name": "*",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./public/icons/full-star.png",
+      "name": "default",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    }
+  },
+  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\public\\icons\\half-star.png": {
+    "": {
+      "id": "(app-client)/./public/icons/half-star.png",
+      "name": "",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./public/icons/half-star.png",
+      "name": "*",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./public/icons/half-star.png",
+      "name": "default",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    }
+  },
   "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\app\\components\\SearchBar.tsx": {
     "": {
       "id": "(app-client)/./app/components/SearchBar.tsx",
       "name": "",
       "chunks": [
-        "app/page:app/page"
+        "app/search/page:app/search/page"
       ],
       "async": false
     },
@@ -202,7 +384,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./app/components/SearchBar.tsx",
       "name": "*",
       "chunks": [
-        "app/page:app/page"
+        "app/search/page:app/search/page"
       ],
       "async": false
     },
@@ -210,7 +392,33 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./app/components/SearchBar.tsx",
       "name": "default",
       "chunks": [
-        "app/page:app/page"
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    }
+  },
+  "C:\\Daniel\\Courses\\NextJS13-Bootcamp\\NextJS13\\node_modules\\next\\dist\\client\\image.js": {
+    "": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "default",
+      "chunks": [
+        "app/search/page:app/search/page"
       ],
       "async": false
     }
