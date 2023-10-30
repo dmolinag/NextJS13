@@ -1,7 +1,7 @@
 import Header from './components/Header';
 import SearchSideBar from './components/SearchSideBar';
 import RestaurantCard from './components/RestaurantCard';
-import { PRICE, PrismaClient, Restaurant } from '@prisma/client';
+import { PRICE, PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
@@ -85,7 +85,7 @@ export default async function Search({
 				<div className='w-5/6'>
 					{restaurants.length ? (
 						<>
-							{restaurants.map((restaurant: Restaurant) => (
+							{restaurants.map((restaurant) => (
 								<RestaurantCard key={restaurant.id} restaurant={restaurant} />
 							))}
 						</>
