@@ -3,6 +3,7 @@ import validator from 'validator';
 import { PrismaClient } from '@prisma/client';
 import bcrypt from 'bcrypt';
 import * as jose from 'jose';
+import { setCookie } from 'cookies-next';
 
 const prisma = new PrismaClient();
 
@@ -11,20 +12,19 @@ export default async function handler(
 	res: NextApiResponse
 ) {
 	if (req.method === 'POST') {
-		const { firstName, lastName, email, phone, city, password } = req.body;
-
+		const { first_name, last_name, email, phone, city, password } = req.body;
 		const errors: string[] = [];
 
 		const validationSchema = [
 			{
-				valid: validator.isLength(firstName, {
+				valid: validator.isLength(first_name, {
 					min: 1,
 					max: 20,
 				}),
 				errorMessage: 'First name is Invalid',
 			},
 			{
-				valid: validator.isLength(lastName, {
+				valid: validator.isLength(last_name, {
 					min: 1,
 					max: 20,
 				}),
@@ -76,8 +76,8 @@ export default async function handler(
 
 		const user = await prisma.user.create({
 			data: {
-				first_name: firstName,
-				last_name: lastName,
+				first_name: first_name,
+				last_name: last_name,
 				password: hashedPassword,
 				city,
 				phone,
@@ -92,8 +92,14 @@ export default async function handler(
 			.setExpirationTime('24h')
 			.sign(secret);
 
+		setCookie('jwt', token, { req, res, maxAge: 60 * 6 * 24 });
+
 		return res.status(200).json({
-			token,
+			first_name: user.first_name,
+			lastName: user.last_name,
+			email: user.email,
+			phone: user.phone,
+			city: user.city,
 		});
 	}
 

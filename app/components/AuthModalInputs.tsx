@@ -2,8 +2,8 @@ import React from 'react';
 
 interface Props {
 	inputs: {
-		firstName: string;
-		lastName: string;
+		first_name: string;
+		last_name: string;
 		email: string;
 		phone: string;
 		city: string;
@@ -26,17 +26,17 @@ export default function AuthModalInputs({
 						type='text'
 						className='border rounded p-2 py-3 w-[49%]'
 						placeholder='First Name'
-						value={inputs.firstName}
+						value={inputs.first_name}
 						onChange={handleChangeInput}
-						name='firstName'
+						name='first_name'
 					/>
 					<input
 						type='text'
 						className='border rounded p-2 py-3 w-[49%]'
 						placeholder='Last Name'
-						value={inputs.lastName}
+						value={inputs.last_name}
 						onChange={handleChangeInput}
-						name='lastName'
+						name='last_name'
 					/>
 				</div>
 			)}
