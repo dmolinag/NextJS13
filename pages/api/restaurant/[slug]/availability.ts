@@ -1,5 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import { NextApiRequest, NextApiResponse } from 'next';
+import { times } from '../../../../data';
 import { findAvailabileTables } from '../../../../services/restaurant/findAvailableTables';
 
 const prisma = new PrismaClient();
@@ -53,8 +54,8 @@ export default async function handler(
 		}
 
 		const availabilities = searchTimesWithTables
-			.map((t: any) => {
-				const sumSeats = t.tables.reduce((sum: number, table: any) => {
+			.map((t) => {
+				const sumSeats = t.tables.reduce((sum, table) => {
 					return sum + table.seats;
 				}, 0);
 
@@ -63,7 +64,7 @@ export default async function handler(
 					available: sumSeats >= parseInt(partySize),
 				};
 			})
-			.filter((availability: any) => {
+			.filter((availability) => {
 				const timeIsAfterOpeningHour =
 					new Date(`${day}T${availability.time}`) >=
 					new Date(`${day}T${restaurant.open_time}`);
@@ -78,3 +79,4 @@ export default async function handler(
 	}
 }
 
+// http://localhost:3000/api/restaurant/vivaan-fine-indian-cuisine-ottawa/availability?day=2023-02-03&time=15:00:00.000Z&partySize=8

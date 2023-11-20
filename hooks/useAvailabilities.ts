@@ -1,8 +1,8 @@
-import axios from 'axios';
 import { useState } from 'react';
+import axios from 'axios';
 
 export default function useAvailabilities() {
-	const [loading, setLoading] = useState<boolean>(false);
+	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null);
 	const [data, setData] = useState<
 		{ time: string; available: boolean }[] | null
@@ -19,12 +19,6 @@ export default function useAvailabilities() {
 		day: string;
 		time: string;
 	}) => {
-		console.log({
-			slug,
-			partySize,
-			day,
-			time,
-		});
 		setLoading(true);
 
 		try {
@@ -32,13 +26,13 @@ export default function useAvailabilities() {
 				`http://localhost:3000/api/restaurant/${slug}/availability`,
 				{
 					params: {
-						partySize,
 						day,
 						time,
+						partySize,
 					},
 				}
 			);
-
+			console.log(response);
 			setLoading(false);
 			setData(response.data);
 		} catch (error: any) {

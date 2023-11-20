@@ -3,30 +3,24 @@ import React from 'react';
 
 export default function Price({ price }: { price: PRICE }) {
 	const renderPrice = () => {
-		switch (price) {
-			case PRICE.CHEAP:
-				return (
-					<>
-						<span className='font-bold'>$$</span>
-						<span className='text-gray-400'>$$</span>
-					</>
-				);
-			case PRICE.REGULAR:
-				return (
-					<>
-						<span className='font-bold'>$$$</span>
-						<span className='text-gray-400'>$</span>
-					</>
-				);
-			case PRICE.EXPENSIVE:
-				return (
-					<>
-						<span className='font-bold'>$$$$</span>
-					</>
-				);
-
-			default:
-				break;
+		if (price === PRICE.CHEAP) {
+			return (
+				<>
+					<span>$$</span> <span className='text-gray-400'>$$</span>
+				</>
+			);
+		} else if (price === PRICE.REGULAR) {
+			return (
+				<>
+					<span>$$$</span> <span className='text-gray-400'>$</span>
+				</>
+			);
+		} else {
+			return (
+				<>
+					<span>$$$$</span>
+				</>
+			);
 		}
 	};
 

@@ -1,15 +1,15 @@
 'use client';
 
 import axios from 'axios';
-import React, { useState, createContext, useEffect } from 'react';
 import { getCookie } from 'cookies-next';
+import React, { useState, createContext, useEffect } from 'react';
 
 interface User {
 	id: number;
-	first_name: string;
+	firstName: string;
 	lastName: string;
 	email: string;
-	password: string;
+	city: string;
 	phone: string;
 }
 
@@ -24,7 +24,7 @@ interface AuthState extends State {
 }
 
 export const AuthenticationContext = createContext<AuthState>({
-	loading: true,
+	loading: false,
 	error: null,
 	data: null,
 	setAuthState: () => {},
@@ -36,7 +36,7 @@ export default function AuthContext({
 	children: React.ReactNode;
 }) {
 	const [authState, setAuthState] = useState<State>({
-		loading: false,
+		loading: true,
 		data: null,
 		error: null,
 	});
@@ -66,13 +66,13 @@ export default function AuthContext({
 
 			axios.defaults.headers.common['Authorization'] = `Bearer ${jwt}`;
 
-			return setAuthState({
+			setAuthState({
 				data: response.data,
 				error: null,
 				loading: false,
 			});
 		} catch (error: any) {
-			return setAuthState({
+			setAuthState({
 				data: null,
 				error: error.response.data.errorMessage,
 				loading: false,

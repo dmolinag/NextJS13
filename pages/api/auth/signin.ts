@@ -16,7 +16,10 @@ export default async function handler(
 		const { email, password } = req.body;
 
 		const validationSchema = [
-			{ valid: validator.isEmail(email), errorMessage: 'Email is invalid' },
+			{
+				valid: validator.isEmail(email),
+				errorMessage: 'Email is invalid',
+			},
 			{
 				valid: validator.isLength(password, {
 					min: 1,
@@ -26,7 +29,7 @@ export default async function handler(
 		];
 
 		validationSchema.forEach((check) => {
-			if (check && !check.valid) {
+			if (!check.valid) {
 				errors.push(check.errorMessage);
 			}
 		});
@@ -56,7 +59,9 @@ export default async function handler(
 		}
 
 		const alg = 'HS256';
+
 		const secret = new TextEncoder().encode(process.env.JWT_SECRET);
+
 		const token = await new jose.SignJWT({ email: user.email })
 			.setProtectedHeader({ alg })
 			.setExpirationTime('24h')
@@ -65,7 +70,7 @@ export default async function handler(
 		setCookie('jwt', token, { req, res, maxAge: 60 * 6 * 24 });
 
 		return res.status(200).json({
-			first_name: user.first_name,
+			firstName: user.first_name,
 			lastName: user.last_name,
 			email: user.email,
 			phone: user.phone,

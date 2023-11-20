@@ -27,6 +27,7 @@ export default function SearchSideBar({
 			className: 'border w-full text-reg text-center font-light rounded-r p-2',
 		},
 	];
+
 	return (
 		<div className='w-1/5'>
 			<div className='border-b pb-4 flex flex-col'>
@@ -40,8 +41,8 @@ export default function SearchSideBar({
 								city: location.name,
 							},
 						}}
+						className='font-light text-reg capitalize'
 						key={location.id}
-						className='capitalize font-light text-reg'
 					>
 						{location.name}
 					</Link>
@@ -58,8 +59,8 @@ export default function SearchSideBar({
 								cuisine: cuisine.name,
 							},
 						}}
+						className='font-light text-reg capitalize'
 						key={cuisine.id}
-						className='capitalize font-light text-reg'
 					>
 						{cuisine.name}
 					</Link>
@@ -70,12 +71,11 @@ export default function SearchSideBar({
 				<div className='flex'>
 					{prices.map(({ price, label, className }) => (
 						<Link
-							key={label}
 							href={{
 								pathname: '/search',
 								query: {
 									...searchParams,
-									price: price,
+									price,
 								},
 							}}
 							className={className}

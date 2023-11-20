@@ -2,47 +2,47 @@ import React from 'react';
 
 interface Props {
 	inputs: {
-		first_name: string;
-		last_name: string;
+		firstName: string;
+		lastName: string;
 		email: string;
 		phone: string;
 		city: string;
 		password: string;
 	};
 	handleChangeInput: (e: React.ChangeEvent<HTMLInputElement>) => void;
-	isSignIn: boolean;
+	isSignin: boolean;
 }
 
 export default function AuthModalInputs({
 	inputs,
 	handleChangeInput,
-	isSignIn,
+	isSignin,
 }: Props) {
 	return (
 		<div>
-			{isSignIn ? null : (
+			{isSignin ? null : (
 				<div className='my-3 flex justify-between text-sm'>
 					<input
 						type='text'
 						className='border rounded p-2 py-3 w-[49%]'
 						placeholder='First Name'
-						value={inputs.first_name}
+						value={inputs.firstName}
 						onChange={handleChangeInput}
-						name='first_name'
+						name='firstName'
 					/>
 					<input
 						type='text'
 						className='border rounded p-2 py-3 w-[49%]'
 						placeholder='Last Name'
-						value={inputs.last_name}
+						value={inputs.lastName}
 						onChange={handleChangeInput}
-						name='last_name'
+						name='lastName'
 					/>
 				</div>
 			)}
 			<div className='my-3 flex justify-between text-sm'>
 				<input
-					type='email'
+					type='text'
 					className='border rounded p-2 py-3 w-full'
 					placeholder='Email'
 					value={inputs.email}
@@ -50,10 +50,10 @@ export default function AuthModalInputs({
 					name='email'
 				/>
 			</div>
-			{isSignIn ? null : (
+			{isSignin ? null : (
 				<div className='my-3 flex justify-between text-sm'>
 					<input
-						type='tel'
+						type='text'
 						className='border rounded p-2 py-3 w-[49%]'
 						placeholder='Phone'
 						value={inputs.phone}

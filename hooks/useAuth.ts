@@ -1,7 +1,7 @@
 import axios from 'axios';
+import { getCookie, deleteCookie } from 'cookies-next';
 import { useContext } from 'react';
 import { AuthenticationContext } from '../app/context/AuthContext';
-import { deleteCookie } from 'cookies-next';
 
 const useAuth = () => {
 	const { setAuthState } = useContext(AuthenticationContext);
@@ -43,20 +43,19 @@ const useAuth = () => {
 			});
 		}
 	};
-
 	const signup = async (
 		{
 			email,
 			password,
-			first_name,
-			last_name,
+			firstName,
+			lastName,
 			city,
 			phone,
 		}: {
 			email: string;
 			password: string;
-			first_name: string;
-			last_name: string;
+			firstName: string;
+			lastName: string;
 			city: string;
 			phone: string;
 		},
@@ -73,8 +72,8 @@ const useAuth = () => {
 				{
 					email,
 					password,
-					first_name,
-					last_name,
+					firstName,
+					lastName,
 					city,
 					phone,
 				}

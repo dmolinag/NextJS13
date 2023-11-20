@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
+
 import jwt from 'jsonwebtoken';
 import { PrismaClient } from '@prisma/client';
 
@@ -28,8 +29,8 @@ export default async function handler(
 			first_name: true,
 			last_name: true,
 			email: true,
-			phone: true,
 			city: true,
+			phone: true,
 		},
 	});
 
@@ -41,9 +42,8 @@ export default async function handler(
 
 	return res.json({
 		id: user.id,
-		first_name: user.first_name,
-		last_name: user.last_name,
-		email: user.email,
+		firstName: user.first_name,
+		lastName: user.last_name,
 		phone: user.phone,
 		city: user.city,
 	});
